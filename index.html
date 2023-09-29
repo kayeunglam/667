@@ -6,7 +6,16 @@
 </head>
 <body>
     <h1>Keep Looping!</h1>
-    <audio autoplay controls src="./30-M-08_jyyf.mp3"></audio>
+    <audio id="audio" autoplay controls></audio>
 </body>
 
+<script>
+    var arr = new Array("60s_M002_B_kiwamu.mp3", "60s_M004_D_kiwamu.mp3", 
+    "60s_M005_E_whirlwind_kiwamu.mp3", "60s_M007_G.mp3", "60s_M008_H.mp3", "60s_M009_A_Silver-Lights_kiwamu.mp3", 
+    "60s_M010_B_MADAKANA2005_kiwamu.mp3", "60s_M018_N_Vanish-Crow_east.mp3", "60s_M019_O_Distorted-Blast_east.mp3", 
+    "60s_M023_F_kiwamu.mp3", "60s_M024_Juke_Box_1min_ver1.mp3", "60s_M025_Juke_Box_1min_ver2.mp3");
+    var len = arr.length - 1;
+    document.getElementById("audio").src = "60/" + arr[Math.round(Math.random() * len)];
+
+</script>
 </html>
